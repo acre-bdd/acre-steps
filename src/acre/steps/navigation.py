@@ -1,6 +1,6 @@
 from radish import when
 
-from acre.controls import Link
+from acre import controls
 
 
 @when("I click the link {link:QuotedString}")
