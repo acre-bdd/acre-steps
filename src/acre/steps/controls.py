@@ -47,4 +47,4 @@ def i_enter_text(step, text, control):
 @then('I see the {control:Control} {text:QuotedString}')
 def i_see_control_with_text(step, control, text):
     ctrl = factory.create(control, _=text)
-    ctrl.first
+    ctrl.first.wait_for()
